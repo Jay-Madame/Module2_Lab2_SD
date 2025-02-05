@@ -4,6 +4,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
 
 
@@ -30,7 +31,7 @@ public class EventCalendarTest extends TestCase {
         assertTrue(deadline.isComplete());
     }
 
-    // test in Meeting
+    // tests in Meeting
     public void testMeetingIsComplete() {
         Meeting meeting = new Meeting("newMeeting", LocalDateTime.now(), LocalDateTime.now().plusHours(1));
         // test auto-false default
@@ -41,5 +42,9 @@ public class EventCalendarTest extends TestCase {
         assertTrue(meeting.isComplete());
     }
 
+    public void testMeetingGetDuration() {
+        Meeting meeting = new Meeting("newMeeting", LocalDateTime.now(), LocalDateTime.now().plusHours(1));
+        assertEquals(Duration.ofHours(1), meeting.getDuration());
+    }
 
 }
