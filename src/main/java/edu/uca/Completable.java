@@ -1,7 +1,8 @@
 package edu.uca;
 
-//set up intergace
+//set up interface
 public interface Completable {
+
     void complete();
 
     boolean isComplete();

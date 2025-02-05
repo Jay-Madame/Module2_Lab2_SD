@@ -17,4 +17,14 @@ public class EventTest extends TestCase {
         Event ev2 = new Event("newEvent2", LocalDateTime.now().plusDays(1));
         assertEquals(-1, event.compareTo(ev2));
     }
+
+    public void testDeadlineIsComplete() {
+        Deadline deadline = new Deadline("newDeadline", LocalDateTime.now());
+        //test if auto-false
+        assertFalse(deadline.isComplete());
+
+        //test if complete works
+        deadline.complete();
+        assertTrue(deadline.isComplete());
+    }
 }
