@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47d6b618-e326-46f8-b6b1-8eeff158b046" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uca/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uca/AppTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../random/playingWithJava/exploringMaven/.gitignore" afterDir="false" />
@@ -19,6 +13,8 @@
       <change afterPath="$PROJECT_DIR$/../../../random/playingWithJava/exploringMaven/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../random/playingWithJava/exploringMaven/src/main/java/com/jewell/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../random/playingWithJava/exploringMaven/src/test/java/com/jewell/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.idea/vcs.xml" beforeDir="false" />
@@ -41,7 +37,7 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
@@ -58,6 +54,8 @@
   "keyToString": {
     "JUnit.AppTest.testEventCompareTo.executor": "Run",
     "JUnit.AppTest.testEventSetName.executor": "Run",
+    "JUnit.EventTest.executor": "Run",
+    "JUnit.EventTest.testEventCompareTo.executor": "Debug",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -77,7 +75,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EventTest">
+  <component name="RunManager" selected="JUnit.EventTest.testEventCompareTo">
     <configuration name="AppTest.testEventCompareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="module2.lab2" />
       <extension name="coverage">
@@ -125,8 +123,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EventTest.testEventCompareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2.lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uca" />
+      <option name="MAIN_CLASS_NAME" value="edu.uca.EventTest" />
+      <option name="METHOD_NAME" value="testEventCompareTo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EventTest.testEventCompareTo" />
         <item itemvalue="JUnit.EventTest" />
         <item itemvalue="JUnit.AppTest.testEventCompareTo" />
         <item itemvalue="JUnit.AppTest.testEventSetName" />
@@ -149,7 +164,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738724929721</updated>
-      <workItem from="1738724930693" duration="1859000" />
+      <workItem from="1738724930693" duration="2175000" />
     </task>
     <servers />
   </component>
