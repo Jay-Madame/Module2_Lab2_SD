@@ -25,11 +25,11 @@ public class Meeting extends Event implements Completable {
     }
 
     // accessors
-    LocalDateTime getEndTime() {
+    public LocalDateTime getEndTime() {
         return meetingEndTime;
     }
 
-    Duration getDuration() {
+    public Duration getDuration() {
         return Duration.between(this.getEventDate(), this.getEndTime());
     }
 

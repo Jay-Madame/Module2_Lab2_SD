@@ -13,7 +13,8 @@
       <change afterPath="$PROJECT_DIR$/../../../random/playingWithJava/exploringMaven/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../random/playingWithJava/exploringMaven/src/main/java/com/jewell/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../random/playingWithJava/exploringMaven/src/test/java/com/jewell/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uca/EventCalendarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uca/EventCalendarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uca/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uca/Meeting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.idea/vcs.xml" beforeDir="false" />
@@ -183,7 +184,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738724929721</updated>
-      <workItem from="1738724930693" duration="4555000" />
+      <workItem from="1738724930693" duration="6961000" />
     </task>
     <servers />
   </component>

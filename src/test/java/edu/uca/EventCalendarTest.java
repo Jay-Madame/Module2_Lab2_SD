@@ -42,9 +42,10 @@ public class EventCalendarTest extends TestCase {
         assertTrue(meeting.isComplete());
     }
 
+    // check hour comparison, cut off at minutes to avoid nanosecond
     public void testMeetingGetDuration() {
         Meeting meeting = new Meeting("newMeeting", LocalDateTime.now(), LocalDateTime.now().plusHours(1));
-        assertEquals(Duration.ofHours(1), meeting.getDuration());
+        assertEquals(Duration.ofHours(1).toMinutes(), meeting.getDuration().toMinutes());
     }
 
 }
