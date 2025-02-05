@@ -29,4 +29,17 @@ public class EventCalendarTest extends TestCase {
         deadline.complete();
         assertTrue(deadline.isComplete());
     }
+
+    // test in Meeting
+    public void testMeetingIsComplete() {
+        Meeting meeting = new Meeting("newMeeting", LocalDateTime.now(), LocalDateTime.now().plusHours(1));
+        // test auto-false default
+        assertFalse(meeting.isComplete());
+
+        // test complete
+        meeting.complete();
+        assertTrue(meeting.isComplete());
+    }
+
+
 }
