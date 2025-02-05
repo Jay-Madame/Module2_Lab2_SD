@@ -7,9 +7,9 @@ import junit.framework.TestSuite;
 import java.time.LocalDateTime;
 
 
-public class EventTest extends TestCase {
+public class EventCalendarTest extends TestCase {
     public static Test suite() {
-        return new TestSuite(EventTest.class);
+        return new TestSuite(EventCalendarTest.class);
     }
 
     // test in Event
