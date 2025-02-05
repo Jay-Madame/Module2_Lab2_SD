@@ -12,12 +12,14 @@ public class EventTest extends TestCase {
         return new TestSuite(EventTest.class);
     }
 
+    // test in Event
     public void testEventCompareTo() {
         Event event = new Event("newEvent", LocalDateTime.now());
         Event ev2 = new Event("newEvent2", LocalDateTime.now().plusDays(1));
         assertEquals(-1, event.compareTo(ev2));
     }
 
+    // test in Deadline
     public void testDeadlineIsComplete() {
         Deadline deadline = new Deadline("newDeadline", LocalDateTime.now());
         //test if auto-false
