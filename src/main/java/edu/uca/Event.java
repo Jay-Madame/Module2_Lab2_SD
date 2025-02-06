@@ -1,6 +1,5 @@
 package edu.uca;
 
-
 import java.time.LocalDateTime;
 
 public class Event implements Comparable<Event> {
@@ -9,7 +8,6 @@ public class Event implements Comparable<Event> {
     private String eventName;
     private LocalDateTime eventDate;
 
-    //constructor of when an Event is created param to set up name and date/time
     public Event(String name, LocalDateTime dateTime) {
         this.eventName = name;
         this.eventDate = dateTime;

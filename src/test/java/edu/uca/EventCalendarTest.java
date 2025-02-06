@@ -13,14 +13,14 @@ public class EventCalendarTest extends TestCase {
         return new TestSuite(EventCalendarTest.class);
     }
 
-    // test in Event
+    // EVENT TESTS
     public void testEventCompareTo() {
         Event event = new Event("newEvent", LocalDateTime.now());
         Event ev2 = new Event("newEvent2", LocalDateTime.now().plusDays(1));
         assertEquals(-1, event.compareTo(ev2));
     }
 
-    // test in Deadline
+    // DEADLINE TESTS
     public void testDeadlineIsComplete() {
         Deadline deadline = new Deadline("newDeadline", LocalDateTime.now());
         //test if auto-false
@@ -31,7 +31,7 @@ public class EventCalendarTest extends TestCase {
         assertTrue(deadline.isComplete());
     }
 
-    // tests in Meeting
+    // MEETING TESTS
     public void testMeetingIsComplete() {
         Meeting meeting = new Meeting("newMeeting", LocalDateTime.now(), LocalDateTime.now().plusHours(1));
         // test auto-false default
@@ -46,6 +46,18 @@ public class EventCalendarTest extends TestCase {
     public void testMeetingGetDuration() {
         Meeting meeting = new Meeting("newMeeting", LocalDateTime.now(), LocalDateTime.now().plusHours(1));
         assertEquals(Duration.ofHours(1).toMinutes(), meeting.getDuration().toMinutes());
+    }
+
+    // REMINDER TESTS
+    public void testReminderGetDateTime() {
+        LocalDateTime now = LocalDateTime.now();
+        Reminder reminder = new Reminder("newReminder", now);
+        assertEquals(now, reminder.getDateTime());
+    }
+
+    public void testReminderGetName() {
+        Reminder reminder = new Reminder("newReminder", LocalDateTime.now());
+        assertEquals("newReminder", reminder.getName());
     }
 
 }

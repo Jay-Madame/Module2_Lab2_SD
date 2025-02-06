@@ -14,7 +14,9 @@
       <change afterPath="$PROJECT_DIR$/../../../random/playingWithJava/exploringMaven/src/main/java/com/jewell/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../random/playingWithJava/exploringMaven/src/test/java/com/jewell/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uca/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uca/Meeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uca/EventTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uca/EventTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uca/Reminder.Java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uca/Reminder.Java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uca/EventCalendarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uca/EventCalendarTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LabTwo_SoftwareDev/.idea/vcs.xml" beforeDir="false" />
@@ -56,6 +58,7 @@
     "JUnit.AppTest.testEventSetName.executor": "Run",
     "JUnit.EventCalendarTest.testMeetingGetDuration.executor": "Run",
     "JUnit.EventCalendarTest.testMeetingIsComplete.executor": "Run",
+    "JUnit.EventCalendarTest.testReminderGetDateTime.executor": "Run",
     "JUnit.EventTest.executor": "Run",
     "JUnit.EventTest.testDeadlineIsComplete.executor": "Run",
     "JUnit.EventTest.testEventCompareTo.executor": "Debug",
@@ -78,22 +81,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EventCalendarTest.testMeetingGetDuration">
-    <configuration name="EventCalendarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="module2.lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uca" />
-      <option name="MAIN_CLASS_NAME" value="edu.uca.EventCalendarTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EventCalendarTest.testReminderGetDateTime">
     <configuration name="EventCalendarTest.testDeadlineIsComplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="module2.lab2" />
       <extension name="coverage">
@@ -105,22 +93,6 @@
       <option name="PACKAGE_NAME" value="edu.uca" />
       <option name="MAIN_CLASS_NAME" value="edu.uca.EventCalendarTest" />
       <option name="METHOD_NAME" value="testDeadlineIsComplete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EventCalendarTest.testEventCompareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="module2.lab2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uca" />
-      <option name="MAIN_CLASS_NAME" value="edu.uca.EventCalendarTest" />
-      <option name="METHOD_NAME" value="testEventCompareTo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,13 +130,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EventCalendarTest.testReminderGetDateTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2.lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uca" />
+      <option name="MAIN_CLASS_NAME" value="edu.uca.EventCalendarTest" />
+      <option name="METHOD_NAME" value="testReminderGetDateTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventCalendarTest.testReminderGetName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2.lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uca" />
+      <option name="MAIN_CLASS_NAME" value="edu.uca.EventCalendarTest" />
+      <option name="METHOD_NAME" value="testReminderGetName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EventCalendarTest.testReminderGetDateTime" />
+        <item itemvalue="JUnit.EventCalendarTest.testReminderGetName" />
         <item itemvalue="JUnit.EventCalendarTest.testMeetingGetDuration" />
         <item itemvalue="JUnit.EventCalendarTest.testMeetingIsComplete" />
         <item itemvalue="JUnit.EventCalendarTest.testDeadlineIsComplete" />
-        <item itemvalue="JUnit.EventCalendarTest.testEventCompareTo" />
-        <item itemvalue="JUnit.EventCalendarTest" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +188,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738724929721</updated>
-      <workItem from="1738724930693" duration="6961000" />
+      <workItem from="1738724930693" duration="13441000" />
     </task>
     <servers />
   </component>

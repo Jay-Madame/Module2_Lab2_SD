@@ -10,13 +10,11 @@ public class Deadline extends Event implements Completable {
         super(name, deadline); // creates an event
     }
 
-    //completed the task
     @Override
     public void complete() {
         wasCompleted = true;
     }
 
-    //returns status of task
     @Override
     public boolean isComplete() {
         return wasCompleted;
