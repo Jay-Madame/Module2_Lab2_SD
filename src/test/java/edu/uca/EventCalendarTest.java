@@ -6,6 +6,7 @@ import junit.framework.TestSuite;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 
 public class EventCalendarTest extends TestCase {
@@ -31,9 +32,28 @@ public class EventCalendarTest extends TestCase {
         assertTrue(deadline.isComplete());
     }
 
+    public void testMeetingGetReminder() {
+        LocalDateTime now = LocalDateTime.now();
+
+        Deadline deadline = new Deadline("newDeadline", now);
+
+        Duration daysBefore = Duration.ofDays(1);
+        deadline.addReminder(daysBefore);
+
+        ArrayList<Reminder> reminders = deadline.getReminders();
+
+        // make sure there is one reminder)
+        assertEquals(1, reminders.size());
+
+        // expected reminder
+        LocalDateTime expectedTime = now.minus(daysBefore);
+        Reminder testReminder = new Reminder("newDeadline", expectedTime);
+        assertEquals(testReminder, reminders.get(0));
+    }
+
     // MEETING TESTS
     public void testMeetingIsComplete() {
-        Meeting meeting = new Meeting("newMeeting", LocalDateTime.now(), LocalDateTime.now().plusHours(1));
+        Meeting meeting = new Meeting("newMeeting", LocalDateTime.now(), LocalDateTime.now().plusHours(1), "");
         // test auto-false default
         assertFalse(meeting.isComplete());
 
@@ -44,7 +64,7 @@ public class EventCalendarTest extends TestCase {
 
     // check hour comparison, cut off at minutes to avoid nanosecond
     public void testMeetingGetDuration() {
-        Meeting meeting = new Meeting("newMeeting", LocalDateTime.now(), LocalDateTime.now().plusHours(1));
+        Meeting meeting = new Meeting("newMeeting", LocalDateTime.now(), LocalDateTime.now().plusHours(1), "");
         assertEquals(Duration.ofHours(1).toMinutes(), meeting.getDuration().toMinutes());
     }
 

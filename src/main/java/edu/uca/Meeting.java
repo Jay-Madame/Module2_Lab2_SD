@@ -8,8 +8,9 @@ public class Meeting extends Event implements Completable {
     private String location;
     private boolean isMeetingOver; // complete is renamed for readability
 
-    public Meeting(String name, LocalDateTime startTime, LocalDateTime endTime) {
-        super(name, startTime); // creates an event, only takes startTime
+    public Meeting(String name, LocalDateTime startTime, LocalDateTime endTime, String meetingLocation) {
+        super(name, startTime);// creates an event, only takes startTime
+        location = meetingLocation;
         this.meetingEndTime = endTime;
     }
 
